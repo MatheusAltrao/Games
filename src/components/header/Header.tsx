@@ -28,9 +28,9 @@ const Header = () => {
                     </nav>
                 </div>
 
-                <button className='btn hover:border-zinc-500 border border-zinc-800'>
+                {/*       <button className='btn hover:border-zinc-500 border border-zinc-800'>
                     Entrar <User size={20} />{' '}
-                </button>
+                </button> */}
             </div>
         </header>
     );

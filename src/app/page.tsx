@@ -8,9 +8,6 @@ async function getDalyGame() {
     try {
         const res = await fetch(
             `${process.env.NEXT_API_URL}/next-api/?api=game_day`,
-            {
-                next: { revalidate: 60 * 60 },
-            },
         );
         return res.json();
     } catch (error) {
@@ -22,9 +19,6 @@ async function getGamesData() {
     try {
         const res = await fetch(
             `${process.env.NEXT_API_URL}/next-api/?api=games`,
-            {
-                next: { revalidate: 60 * 60 },
-            },
         );
         return res.json();
     } catch (error) {
